@@ -1,8 +1,9 @@
 <?php
 
+$db_file = getcwd() . '/../sqlite.db';
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'sqlite:' . $db_file, // SQLite
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8',
